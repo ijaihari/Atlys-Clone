@@ -1,0 +1,96 @@
+@import '../styles/variables';
+
+.header {
+  position: relative;
+  width: 100%;
+  background-color: $color-primary;
+  top: 0;
+  position: fixed;
+  z-index: 10;
+  box-shadow: (0px 1px 1px rgba(0, 0, 0, .05));
+
+  @media(min-width:768px) {
+    box-shadow: none;
+  }
+
+  .nav {
+    margin: 0px auto;
+    font-weight: 500;
+    max-width: 48rem;
+
+    @media (min-width: 1024px) {
+      max-width: 72rem;
+    }
+
+    .nav-section {
+      padding: 0.5rem;
+
+      .nav-content {
+        height: 45.6px;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+
+        @media (min-width: 768px) {
+          height: 4rem;
+        }
+
+        .logo-color {
+          margin-top: 7px;
+          color: #FFF;
+        }
+      }
+    }
+  }
+}
+
+.badge {
+  svg {
+    display: none;
+
+  }
+
+  p {
+    display: none;
+  }
+
+  @media(min-width: 768px) {
+
+    svg {
+      display: block;
+
+    }
+
+    p {
+      display: block;
+      width: 72px;
+      font-weight: 600;
+      line-height: 1;
+      margin-left: 0.25rem;
+    }
+  }
+}
+
+.pro {
+  height: 40px;
+  width: 40px;
+}
+
+.profile-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  div {
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15px;
+    text-decoration: underline;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media(min-width: 768px) {}

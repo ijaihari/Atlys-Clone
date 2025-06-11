@@ -1,0 +1,95 @@
+.destination-popup {
+    margin-top: 10px;
+    position: absolute;
+    top: 4rem;
+    z-index: 5;
+    width: 500px;
+    height: 374px;
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.destination-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 0;
+    overflow-y: scroll;
+    max-height: 600px;
+
+    @media (min-width: 768px) {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    @media (min-width: 1024px) {
+        margin-top: -2rem;
+        padding: 3rem 0;
+    }
+}
+
+.title {
+    font-size: 1.125rem;
+    font-weight: 500;
+    padding: 0 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.destination-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.destination-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1.25rem;
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.2s;
+
+    &:hover {
+        background-color: #e5e7eb;
+    }
+}
+
+.destination-image {
+    width: 3rem;
+    height: 3rem;
+    flex-shrink: 0;
+    border-radius: 0.75rem;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.destination-details {
+    flex: 1;
+    padding-left: 0.5rem;
+
+    .destination-name {
+        font-size: 1.125rem;
+        font-weight: 500;
+        margin-bottom: -0.25rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .destination-visa {
+        font-size: 0.875rem;
+        color: #4b5563;
+
+        .highlight {
+            color: #3b82f6;
+        }
+    }
+}
