@@ -126,20 +126,23 @@
             .copy {
                 display: flex;
                 align-items: center;
-                gap: .5rem;
+                gap: .2rem;
                 line-height: 20px;
 
+                    &:hover {
+                        text-decoration: underline;
+                    }
                 a {
                     color: #6b7280;
                     font-size: 14px;
                     display: flex;
 
                     &:hover {
+                        text-decoration: underline;
                         color: #111827;
                     }
 
                     span {
-
                         margin-right: 8px;
                     }
                 }
